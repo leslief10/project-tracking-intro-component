@@ -38,6 +38,7 @@ header {
 
 .menu-btn {
   padding-bottom: 0.4rem;
+  cursor: pointer;
 }
 
 .header-nav {
@@ -52,6 +53,10 @@ header {
   background: white;
   border-radius: 0.3rem;
   box-shadow: -0.1rem 1rem 1.3rem 0rem rgba(0,0,0,0.25);
+}
+
+.toggle-nav {
+  display: flex;
 }
 
 .header-nav ul {
@@ -107,7 +112,6 @@ header {
 
 .landing {
   position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,6 +120,7 @@ header {
 }
 
 .illustration-container {
+  align-self: flex-end;
   width: 37.5rem;
   height: 25rem;
   overflow: hidden;
@@ -245,3 +250,79 @@ footer {
   color: var(--accent-color);
 }
 /*end of footer*/
+/*media queries*/
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 0 5.2rem 0;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .header-nav {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 0.9rem;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .header-nav ul {
+    flex-direction: row;
+  }
+
+  .header-nav ul li {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .header-nav ul li a {
+    font-size: 1.6rem;
+  }
+
+  .login span {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border-top: none;
+    background: var(--light-text-color);
+    opacity: 0.5;
+  }
+
+  .background-decoration {
+    width: 40.5rem;
+    height: 42.7rem;
+  }
+
+  .landing {
+    height: 90vh;
+    padding: 12.4rem 0 0;
+  }
+
+  .illustration-container {
+    width: 54.8rem;
+    height: 36.5rem;
+  }
+
+  .illustration {
+    width: 74.5rem;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 9.6rem;
+    padding: 0 8rem 0;
+  }
+}
