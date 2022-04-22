@@ -275,12 +275,13 @@ footer {
 
   .header-nav ul {
     flex-direction: row;
+    gap: 4.2rem;
   }
 
   .header-nav ul li {
     flex-direction: row;
     align-items: center;
-    gap: 2.5rem;
+    gap: 4.7rem;
   }
 
   .header-nav ul li a {
@@ -302,7 +303,6 @@ footer {
   }
 
   .landing {
-    /*height: 90vh;*/
     padding: 11.9rem 0 0;
   }
 
