@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Project tracking intro component]()
+- Live Site URL: [Project tracking intro component](https://leslief10.github.io/project-tracking-intro-component/)
 
 ## My process
 
