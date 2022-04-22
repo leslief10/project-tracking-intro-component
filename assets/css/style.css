@@ -302,8 +302,8 @@ footer {
   }
 
   .landing {
-    height: 90vh;
-    padding: 12.4rem 0 0;
+    /*height: 90vh;*/
+    padding: 11.9rem 0 0;
   }
 
   .illustration-container {
@@ -323,6 +323,96 @@ footer {
 @media only screen and (min-width: 1024px) {
   header {
     height: 9.6rem;
-    padding: 0 8rem 0;
+    padding: 0 16.5rem 0 16.6rem;
+  }
+
+  .background-decoration {
+    width: 70.5rem;
+  }
+
+  .illustration-container {
+    width: 67.9rem;
+    height: 46.5rem;
+  }
+
+  .illustration {
+    width: 93.5rem;
+  }
+
+  .info-container {
+    margin-top: 12.9rem;
+    padding-left: 0;
+    padding-inline: 25rem;
+    padding-bottom: 12.9rem;
+  }
+
+  .new-container {
+    margin-bottom: 2rem;
+  }
+
+  .new-container span {
+    padding-top: 0.2rem;
+    font-size: 1.6rem;
+  }
+
+  .info-container h1 {
+    font-size: 6.9rem;
+    line-height: 6.3rem;
+  }
+
+  .info-container__text {
+    padding-right: 22.3rem;
+    margin-top: 3.7rem;
+    font-size: 1.9rem;
+  }
+
+  .btn-container {
+    margin-top: 6.3rem;
+  }
+
+  .btn-container button {
+    width: 18.4rem;
+    height: 4.8rem;
+    font-size: 1.8rem;
+  }
+
+  .btn-container p {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .landing {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 12rem;
+  }
+  .illustration-container {
+    order: 2;
+  }
+
+  .info-container {
+    margin-top: 0;
+    order: 1;
+    padding-inline: 0;
+    padding-bottom: 0;
+    padding-left: 7rem;
+    width: 60.1rem;
+  }
+
+  .btn-container {
+    justify-content: flex-start;
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
+  .landing {
+    gap: 8.1rem;
+    
+  }
+  .info-container {
+    padding-left: 16.5rem;
+    width: 68rem;
   }
 }
